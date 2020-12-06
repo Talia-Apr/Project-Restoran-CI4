@@ -17,7 +17,6 @@
         <tbody>
         <?php $no = 1?>
         <?php foreach($detail as $key => $value): ?>
-        <?php var_dump($value) ?>
             <tr>
                 <td class="text-center"><?= $no++?></td>            
                 <td class="text-center"><?php echo $value['tglorder'] ?></td>            
