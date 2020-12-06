@@ -106,7 +106,6 @@ class HomePage extends BaseController
         $email = session()->get('email');
         $result = $vorder->getWhere(['email' => $email]);
 
-        $pager = \Config\Services::pager();
         $halaman = $result->getResult('array');
         $count = count($halaman);
 
