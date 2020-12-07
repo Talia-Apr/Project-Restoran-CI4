@@ -25,22 +25,22 @@
                                 <li class="nav-item mt-2"><img class="mr-2" src="<?= base_url('/icon/person.svg')?>"><?= session()->get('email') ?> </li>
 
                                 <li class="nav-item ml-1">
-                                    <a class="btn btn-light"  href="<?= base_url('/front/Beli/index/') ?>"><img src="<?= base_url('/icon/bag.svg') ?>"></a>
+                                    <a class="btn btn-light"  href="<?= base_url('/front/beli/') ?>"><img src="<?= base_url('/icon/bag.svg') ?>"></a>
                                 </li>
 
-                                <li class="nav-item ml-1"><a class="btn btn-light" href="<?= base_url('/front/HomePage/histori/') ?>"><img src="<?= base_url('/icon/history.svg') ?>"></a></li>
+                                <li class="nav-item ml-1"><a class="btn btn-light" href="<?= base_url('/front/homepage/histori/') ?>"><img src="<?= base_url('/icon/history.svg') ?>"></a></li>
 
                                 <li class="nav-item ml-1 mt-2">
-                                    <a class="btn-sm btn-secondary" href="<?= base_url('/Login/logout/') ?>" class="btn btn-danger">Logout </a>
+                                    <a class="btn-sm btn-secondary" href="<?= base_url('/login/logout/') ?>" class="btn btn-danger">Logout </a>
                                 </li>
 
                             <?php } else { ?>
                                 <li class="nav-item ml-2 mt-2">
-                                    <a class="btn-sm btn-info" href="<?= base_url('/front/HomePage/create/') ?>" class="btn btn-danger">Daftar</a>
+                                    <a class="btn-sm btn-info" href="<?= base_url('/front/homepage/create/') ?>" class="btn btn-danger">Daftar</a>
                                 </li>
 
                                 <li class="nav-item ml-2 mr-2 mt-2">
-                                    <a class="btn-sm btn-info" href="<?= base_url('/Login') ?>" class="btn btn-danger">Login</a>
+                                    <a class="btn-sm btn-info" href="<?= base_url('/login') ?>" class="btn btn-danger">Login</a>
                                 </li>
                             <?php } ?>
 
