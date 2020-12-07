@@ -2,8 +2,8 @@
 
 <?= $this->section('content') ?>
 
-<divalue class="row mt-2">
-    <divalue class="col">
+<div class="row mt-2">
+    <div class="col">
         <table class="table">
         <tr>
             <thead class="thead-dark text-center">
@@ -36,7 +36,7 @@
         <?php if ($total>0) :?>
             <a href="<?=base_url('/front/beli/checkout/'.$total) ?>" role="button" class="btn btn-info">CHECKOUT</a>        
         <?php endif?>
-    </divalue>
-</divalue>
+    </div>
+</div>
 
 <?= $this->endSection() ?>
