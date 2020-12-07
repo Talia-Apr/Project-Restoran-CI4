@@ -64,6 +64,15 @@ $routes->group('admin', ['filter' => 'Auth'], function($routes){
 $routes->group('front', ['filter' => 'Puth'], function($routes){
 	$routes->add('Beli','Front\Beli::index');
 	$routes->add('beli/index/(:any)','Front\Beli::index/$1');
+	$routes->add('beli/delete/(:any)','front\beli::delete/$1');
+	$routes->add('beli/tambah/(:any)','front\beli::tambah/$1');
+	$routes->add('beli/kurang/(:any)','front\beli::kurang/$1');
+
+	$routes->add('beli/checkout/(:any)','front\beli::checkout/$1');
+	$routes->add('beli/checkout','front\beli::checkout');
+
+	$routes->add('homepage/histori','front\HomePage::histori');
+	$routes->add('homepage/detail/(:any)','front\HomePage::detail/$1');
 });
 
 /**
