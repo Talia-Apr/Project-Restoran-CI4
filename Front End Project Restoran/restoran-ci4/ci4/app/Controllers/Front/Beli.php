@@ -68,7 +68,7 @@ class Beli extends BaseController
         if (session()->get($idmenu) == 0) {
             session()->remove($idmenu);
         }
-        return redirect()->to(base_url('/front/Beli'));
+        return redirect()->to(base_url('/front/beli'));
     }
 
     public function hapus($id = null)
