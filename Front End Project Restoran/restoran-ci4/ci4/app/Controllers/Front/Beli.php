@@ -78,19 +78,6 @@ class Beli extends BaseController
         return redirect()->to(base_url('/front/beli'));
     }
 
-    public function kosonganSession()
-    {
-        foreach (session()->get() as $key => $value) {
-            if (
-                $key<>'__ci_last_regenerate' && $key<>'_ci_previous_url' && $key<>'pelanggan' 
-                && $key<>'email' && $key<>'idpelanggan'
-            ) {
-                $id = substr($key, 1);
-                session()->remove('_'.$id);
-            }
-        }
-    }
-
     public function checkout($total = null)
     {
         $db    = \Config\Database::connect();
@@ -177,4 +164,21 @@ class Beli extends BaseController
         }
     }
 
+<<<<<<< Updated upstream
 }
+=======
+    public function kosonganSession()
+    {
+        foreach (session()->get() as $key => $value) {
+            if (
+                $key<>'__ci_last_regenerate' && $key<>'_ci_previous_url' && $key<>'pelanggan' 
+                && $key<>'email' && $key<>'idpelanggan'
+            ) {
+                $id = substr($key, 1);
+                session()->remove('_'.$id);
+            }
+        }
+    }
+
+}
+>>>>>>> Stashed changes
